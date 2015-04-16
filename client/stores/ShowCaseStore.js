@@ -7,12 +7,12 @@ let _showcases = Immutable.List();
 export default Reflux.createStore({
 
     init: function() {
-
+         this.listenTo(Actions.loadCases.complete, this.loadCases);
     },
 
-    loadShowcases(showcases) {
-        
-	this.trigger(_showcases);
+    loadCases(showcases) {
+        _showcases = showcases;
+	   this.trigger(_showcases);
     },
 
     getShowcases() {
