@@ -3,4 +3,5 @@
 * npm install
 * grunt http-server (tab 1)
 * grunt dev (tab 2)
-* kood kood
+* open browser: http://localhost:8765
+* kood kood kood kood
